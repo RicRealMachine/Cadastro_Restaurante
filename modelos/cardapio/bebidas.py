@@ -3,7 +3,7 @@ from modelos.cardapio.itens_do_cardapio import ItemCardapio
 class Bebidas(ItemCardapio):
     def __init__(self, nome, preco, tamanho):
         super().__init__(nome, preco)
-        self.tamanho = tamanho
+        self._tamanho = tamanho
 
     def __str__(self):
-        return f"{self.nome} - R$ {self.preco} ({self.tamanho})"
+       return f"{self._nome} - R$ {self._preco} ({self._tamanho})"

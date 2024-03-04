@@ -44,7 +44,6 @@ class Restaurante:
         return media
 
  
-    @property
     def adicionar_cardapio(self,item):
         if isinstance(item,ItemCardapio):
             self._cardapio.append(item)
